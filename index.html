@@ -225,10 +225,9 @@
       display: flex; align-items: center; gap: 4px;
       overflow: hidden; min-width: 0;
     }
-    .verdict-ultra_go { background: linear-gradient(90deg, rgba(247,200,79,0.35), rgba(63,185,80,0.35));
+    .verdict-super_go { background: linear-gradient(90deg, rgba(247,200,79,0.35), rgba(63,185,80,0.35));
                           color: #ffd966; font-weight: 700;
                           box-shadow: 0 0 8px rgba(247,200,79,0.4); }
-    .verdict-super_go { background: rgba(63,185,80,0.30); color: #3fb950; font-weight: 700; }
     .verdict-go      { background: rgba(63,185,80,0.18);  color: #3fb950; }
     .verdict-caution { background: rgba(210,153,34,0.18); color: #d2993a; }
     .verdict-wait    { background: rgba(139,148,158,0.15);color: #8b949e; }
@@ -644,7 +643,7 @@
 <!-- ヘッダー -->
 <div class="header">
   <h1>📊 スイングトレード 分析レポート</h1>
-  <span class="updated">最終更新: 2026-05-09 14:17</span>
+  <span class="updated">最終更新: 2026-05-09 14:37</span>
   <button class="refresh-btn" onclick="location.reload()">🔄 更新</button>
 </div>
 
@@ -756,7 +755,6 @@
 <div id="tab-holdings" class="tab-pane">
   <div class="filter-bar" style="position:sticky; top:98px; z-index:97;">
     <button class="filter-btn active" onclick="filterCards('h_all',     this, 'holdings')">すべて (35)</button>
-    <button class="filter-btn" onclick="filterCards('h_ultra_go', this, 'holdings')">⭐⭐ ultra_go (0)</button>
     <button class="filter-btn" onclick="filterCards('h_super_go', this, 'holdings')">⭐ super_go (0)</button>
     <button class="filter-btn" onclick="filterCards('h_go',      this, 'holdings')">🟢 go (0)</button>
     <button class="filter-btn" onclick="filterCards('h_caution', this, 'holdings')">🟡 caution (16)</button>
@@ -2698,7 +2696,6 @@
 <div id="tab-watchlist" class="tab-pane">
   <div class="filter-bar" style="position:sticky; top:98px; z-index:97;">
     <button class="filter-btn active" onclick="filterCards('w_all',     this, 'watchlist')">すべて (14)</button>
-    <button class="filter-btn" onclick="filterCards('w_ultra_go', this, 'watchlist')">⭐⭐ ultra_go (0)</button>
     <button class="filter-btn" onclick="filterCards('w_super_go', this, 'watchlist')">⭐ super_go (0)</button>
     <button class="filter-btn" onclick="filterCards('w_go',      this, 'watchlist')">🟢 go (3)</button>
     <button class="filter-btn" onclick="filterCards('w_caution', this, 'watchlist')">🟡 caution (4)</button>
@@ -3477,8 +3474,7 @@
     <span>🔄 最終スキャン: <b style="color:#c9d1d9">2026-05-09</b></span>
     <span>📦 総銘柄数: <b style="color:#c9d1d9">2547件</b></span>
     <span>✅ スキャン済: <b style="color:#3fb950">2547件</b></span>
-    <span>⭐⭐ ultra_go: <b style="color:#ffd966">0件</b></span>
-    <span>⭐ super_go: <b style="color:#3fb950">0件</b></span>
+    <span>⭐ super_go: <b style="color:#ffd966">0件</b></span>
     <span>🟢 go: <b style="color:#3fb950">34件</b></span>
     <span>🟡 caution: <b style="color:#f0a000">896件</b></span>
     <span style="margin-left:auto; font-size:0.82em; color:#58a6ff">
@@ -3487,7 +3483,6 @@
   </div>
   <div class="filter-bar" style="top:98px;">
     <button class="filter-btn active" onclick="filterUniverse('all',     this)">すべて (2547)</button>
-    <button class="filter-btn" onclick="filterUniverse('ultra_go', this)">⭐⭐ ultra_go (0)</button>
     <button class="filter-btn" onclick="filterUniverse('super_go', this)">⭐ super_go (0)</button>
     <button class="filter-btn" onclick="filterUniverse('go',      this)">🟢 go (34)</button>
     <button class="filter-btn" onclick="filterUniverse('caution', this)">🟡 caution (896)</button>
@@ -90184,7 +90179,7 @@
     <table class="score-table">
       <thead><tr><th>判定</th><th>条件</th><th>バックテスト (10日後決済 / 最新)</th></tr></thead>
       <tbody>
-        <tr><td style="color:#ffd966"><b>⭐⭐ ultra_go</b></td><td>super_go の条件 + P軸≥2点 (出来高急増/押し目/高ボラ のうち2つ以上)</td><td>n=724 / 勝率<b>87.8%</b> / 平均<b>+10.91%</b> / <b>PF 16.35</b></td></tr>
+        <tr><td style="color:#ffd966"><b>⭐ super_go</b></td><td>super_go の条件 + P軸≥2点 (出来高急増/押し目/高ボラ のうち2つ以上)</td><td>―</td></tr>
         <tr><td style="color:#56d364"><b>⭐ super_go</b></td><td>S≥8 ∧ ML≥0.68 ∧ EV≥2.5%</td><td>―</td></tr>
         <tr><td style="color:#3fb950"><b>🟢 go</b></td><td>S≥7 ∧ ML≥0.62 ∧ EV≥1.2% (または S<4 ∧ ML≥0.65 ∧ EV≥1.0% の救出パス)</td><td>n=2,603 / 勝率<b>87.8%</b> / 平均<b>+7.51%</b> / <b>PF 14.67</b></td></tr>
         <tr><td style="color:#f0a000"><b>🟡 caution</b></td><td>(EV≥0% または S≥5) ∧ ML≥0.50</td><td>n=269,960 / 勝率<b>54.5%</b> / 平均<b>+1.04%</b> / <b>PF 1.50</b></td></tr>
@@ -90228,8 +90223,8 @@
       </tbody>
     </table>
     <p style="color:#8b949e;font-size:0.88em;margin-top:8px">
-      ※ 旧 P 玉（予測ボーナス: 出来高急増/押し目/高ボラ）は <b>⭐⭐ ultra_go バッジに統合</b>。
-      4玉が S/R/M/E で全て緑(◎) かつ P軸条件 (≥2点) を満たす銘柄が ultra_go ⭐⭐ に昇格。
+      ※ 旧 P 玉（予測ボーナス: 出来高急増/押し目/高ボラ）は <b>⭐ super_go バッジに統合</b>。
+      4玉が S/R/M/E で全て緑(◎) かつ P軸条件 (≥2点) を満たす銘柄が super_go ⭐⭐ に昇格。
     </p>
 
     <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;font-size:0.83em">
@@ -90627,8 +90622,8 @@
     <table class="score-table">
       <thead><tr><th>要素</th><th>意味</th></tr></thead>
       <tbody>
-        <tr><td><b>Y軸</b></td><td>下から ng / wait / caution / 🟢go / ⭐super_go / ⭐⭐ultra_go の6段階</td></tr>
-        <tr><td><b>バー色</b></td><td>verdict 種別 (赤=ng, 黄=caution, 緑=go〜super_go, 金=ultra_go)</td></tr>
+        <tr><td><b>Y軸</b></td><td>下から ng / wait / caution / 🟢go / ⭐super_go / ⭐ super_go の6段階</td></tr>
+        <tr><td><b>バー色</b></td><td>verdict 種別 (赤=ng, 黄=caution, 緑=go〜super_go, 金=super_go)</td></tr>
         <tr><td><b>株価ライン</b></td><td>右軸に重ね描き — verdict と株価の連動を可視化</td></tr>
         <tr><td><b>サンプル粒度</b></td><td>現在は週次 (約7日間隔)。今後 daily に密集化予定。毎朝 daily_update が新規1点ずつ追加</td></tr>
         <tr><td><b>データソース</b></td><td><code>data/cache/verdict_history.parquet</code> (全2,242銘柄 / 321k行)。<code>build_verdict_history.py</code> で再構築可</td></tr>
@@ -90650,10 +90645,9 @@
     </table>
 
     <h3 style="color:#79c0ff; margin-top:20px">▼ 判定（verdict）— レポート/シミュレーション/バックテスト 共通</h3>
-    <p style="color:#8b949e; font-size:0.88em">カード上部の<b>4色玉</b> S/R/M/E + P軸 を組合せて判定 (P は ultra_go バッジに統合)。<code>scripts/verdict_lib.py</code> が単一の判定ロジック。</p>
+    <p style="color:#8b949e; font-size:0.88em">カード上部の<b>4色玉</b> S/R/M/E + P軸 を組合せて判定 (P は super_go バッジに統合)。<code>scripts/verdict_lib.py</code> が単一の判定ロジック。</p>
     <table class="guide-table" style="width:100%">
-      <tr><td style="width:140px"><b>⭐⭐ ultra_go</b></td><td><b>super_go の条件 + P軸≥2点</b>。「出来高急増 (vol_ratio_3d≥1.5) / 押し目 (mom_20d≤-0.05) / 高ボラ (atr_pct≥0.03)」の3条件のうち2つ以上点灯。</td></tr>
-      <tr><td><b>⭐ super_go</b></td><td>S≥8 ∧ ML≥0.68 ∧ EV≥2.5%</td></tr>
+      <tr><td style="width:140px"><b>⭐ super_go</b></td><td><b>super_go の条件 + P軸≥2点</b>。「出来高急増 (vol_ratio_3d≥1.5) / 押し目 (mom_20d≤-0.05) / 高ボラ (atr_pct≥0.03)」の3条件のうち2つ以上点灯。</td></tr>
       <tr><td><b>🟢 go</b></td><td>S≥7 ∧ ML≥0.62 ∧ EV≥1.2% (または S<4 ∧ ML≥0.65 ∧ EV≥1.0% — 低スコアお宝救出)</td></tr>
       <tr><td><b>🟡 caution</b></td><td>(EV≥0% または S≥5) ∧ ML≥0.50</td></tr>
       <tr><td><b>─ wait</b></td><td>score≥3 だが caution 条件未満</td></tr>
@@ -90661,7 +90655,7 @@
     </table>
 
     <h3 style="color:#79c0ff; margin-top:20px">▼ 4色玉 (S/R/M/E) の閾値・サイズ</h3>
-    <p style="color:#8b949e; font-size:0.88em">カードに表示される 4色玉。色=現在値、サイズ=その軸の予測力（バックテスト PF lift から算出）。<b>P 軸は ultra_go バッジに統合され、玉表示からは廃止。</b></p>
+    <p style="color:#8b949e; font-size:0.88em">カードに表示される 4色玉。色=現在値、サイズ=その軸の予測力（バックテスト PF lift から算出）。<b>P 軸は super_go バッジに統合され、玉表示からは廃止。</b></p>
     <table class="guide-table" style="width:100%">
       <tr><th>軸</th><th>色判定</th><th>玉サイズ (大=予測力高)</th></tr>
       <tr><td><b>S (score)</b></td><td>緑 ≥7  /  青 ≥4  /  赤 &lt;4</td><td>20px (PF lift +0.21)</td></tr>
@@ -90670,7 +90664,7 @@
       <tr><td><b>E (EV)</b></td><td>緑 ≥+2.0%  /  青 ≥+1.0%  /  橙 ≥0%  /  赤 &lt;0%</td><td>26px (PF lift +1.37, 最大)</td></tr>
     </table>
     <p style="color:#8b949e; font-size:0.85em; margin-top:6px">
-      ※ P軸 (出来高急増/押し目/高ボラ) は4色玉とは別軸として super_go → ultra_go の昇格条件に使用。
+      ※ P軸 (出来高急増/押し目/高ボラ) は4色玉とは別軸として super_go → super_go の昇格条件に使用。
     </p>
 
     <h3 style="color:#79c0ff; margin-top:20px">▼ バックテスト指標</h3>
@@ -94653,9 +94647,8 @@ function apToggle(sk) {
         const el = document.getElementById('card-' + d.uid);
         if (!el) return;
         let show = type === 'h_all'      ? true
-                 : type === 'h_ultra_go' ? d.verdict === 'ultra_go'
-                 : type === 'h_super_go' ? (d.verdict === 'super_go' || d.verdict === 'ultra_go')
-                 : type === 'h_go'       ? (d.verdict === 'go' || d.verdict === 'super_go' || d.verdict === 'ultra_go')
+                 : type === 'h_super_go' ? d.verdict === 'super_go'
+                 : type === 'h_go'       ? (d.verdict === 'go' || d.verdict === 'super_go')
                  : type === 'h_caution'  ? d.verdict === 'caution'
                  : type === 'h_wait'     ? d.verdict === 'wait'
                  : type === 'h_ng'       ? (d.verdict === 'ng' || d.score <= -4)
@@ -94675,9 +94668,8 @@ function apToggle(sk) {
         const el = document.getElementById('wl-card-' + d.code);
         if (!el) return;
         let show = type === 'w_all'      ? true
-                 : type === 'w_ultra_go' ? d.verdict === 'ultra_go'
-                 : type === 'w_super_go' ? (d.verdict === 'super_go' || d.verdict === 'ultra_go')
-                 : type === 'w_go'       ? (d.verdict === 'go' || d.verdict === 'super_go' || d.verdict === 'ultra_go')
+                 : type === 'w_super_go' ? d.verdict === 'super_go'
+                 : type === 'w_go'       ? (d.verdict === 'go' || d.verdict === 'super_go')
                  : type === 'w_caution'  ? d.verdict === 'caution'
                  : type === 'w_wait'     ? d.verdict === 'wait'
                  : type === 'w_ng'       ? (d.verdict === 'ng' || d.score <= -4)
@@ -94704,9 +94696,8 @@ function apToggle(sk) {
       const badge   = card.querySelector('.score-badge');
       const sc      = badge ? (parseFloat(badge.textContent) || 0) : 0;
       const show = type === 'all'      ? true
-                 : type === 'ultra_go' ? verdict === 'ultra_go'
-                 : type === 'super_go' ? (verdict === 'super_go' || verdict === 'ultra_go')
-                 : type === 'go'       ? (verdict === 'go' || verdict === 'super_go' || verdict === 'ultra_go')
+                 : type === 'super_go' ? verdict === 'super_go'
+                 : type === 'go'       ? (verdict === 'go' || verdict === 'super_go')
                  : type === 'caution'  ? verdict === 'caution'
                  : type === 'wait'     ? verdict === 'wait'
                  : type === 'ng'       ? verdict === 'ng'

@@ -643,7 +643,7 @@
 <!-- ヘッダー -->
 <div class="header">
   <h1>📊 スイングトレード 分析レポート</h1>
-  <span class="updated">最終更新: 2026-05-14 19:17</span>
+  <span class="updated">最終更新: 2026-05-14 19:21</span>
   <button class="refresh-btn" onclick="location.reload()">🔄 更新</button>
 </div>
 
@@ -755,8 +755,9 @@
 <!-- ══ タブ①: 保有銘柄 ══ -->
 <div id="tab-holdings" class="tab-pane">
   <div class="filter-bar" style="position:sticky; top:98px; z-index:97;">
-    <button class="filter-btn active" onclick="filterCards('h_go',      this, 'holdings')">🟢 go+ (0)</button>
+    <button class="filter-btn active" onclick="filterCards('h_all',     this, 'holdings')">すべて (32)</button>
     <button class="filter-btn" onclick="filterCards('h_super_go', this, 'holdings')">⭐ super_go (0)</button>
+    <button class="filter-btn" onclick="filterCards('h_go',      this, 'holdings')">🟢 go+ (0)</button>
     <button class="filter-btn" onclick="filterCards('h_caution', this, 'holdings')">🟡 caution (8)</button>
     <button class="filter-btn" onclick="filterCards('h_wait',    this, 'holdings')">─ wait (13)</button>
     <button class="filter-btn" onclick="filterCards('h_ng',      this, 'holdings')">✗ ng (13)</button>
@@ -2562,8 +2563,9 @@
 <!-- ══ タブ②: 検討銘柄 ══ -->
 <div id="tab-watchlist" class="tab-pane">
   <div class="filter-bar" style="position:sticky; top:98px; z-index:97;">
-    <button class="filter-btn active" onclick="filterCards('w_go',      this, 'watchlist')">🟢 go+ (0)</button>
+    <button class="filter-btn active" onclick="filterCards('w_all',     this, 'watchlist')">すべて (14)</button>
     <button class="filter-btn" onclick="filterCards('w_super_go', this, 'watchlist')">⭐ super_go (0)</button>
+    <button class="filter-btn" onclick="filterCards('w_go',      this, 'watchlist')">🟢 go+ (0)</button>
     <button class="filter-btn" onclick="filterCards('w_caution', this, 'watchlist')">🟡 caution (2)</button>
     <button class="filter-btn" onclick="filterCards('w_wait',    this, 'watchlist')">─ wait (8)</button>
     <button class="filter-btn" onclick="filterCards('w_ng',      this, 'watchlist')">✗ ng (4)</button>

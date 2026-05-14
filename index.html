@@ -643,7 +643,7 @@
 <!-- ヘッダー -->
 <div class="header">
   <h1>📊 スイングトレード 分析レポート</h1>
-  <span class="updated">最終更新: 2026-05-14 22:10</span>
+  <span class="updated">最終更新: 2026-05-14 22:22</span>
   <button class="refresh-btn" onclick="location.reload()">🔄 更新</button>
 </div>
 
@@ -724,7 +724,7 @@
     <span class="stat-label">前月比</span>
   </div>
   <div class="stat" style="border-left:1px solid #30363d; padding-left:16px; margin-left:8px;">
-    <span class="stat-val" style="color:#3fb950">1</span>
+    <span class="stat-val" style="color:#3fb950">2</span>
     <span class="stat-label">検討 買い候補</span>
   </div>
   <div class="stat">
@@ -745,7 +745,7 @@
 <div class="tab-nav">
   <button class="tab-btn active" onclick="switchTab('universe', this)">🌐 ユニバース (2674)</button>
   <button class="tab-btn" onclick="switchTab('holdings',  this)">📊 保有銘柄 (32)</button>
-  <button class="tab-btn"        onclick="switchTab('watchlist', this)">🔍 検討銘柄 (5)</button>
+  <button class="tab-btn"        onclick="switchTab('watchlist', this)">🔍 検討銘柄 (6)</button>
   <button class="tab-btn"        onclick="switchTab('paper',     this)">🎮 仮想取引 (手動)</button>
   <button class="tab-btn"        onclick="switchTab('autopaper', this)">🤖 仮想取引 (自動)</button>
   <button class="tab-btn"        onclick="switchTab('guide',     this)">📖 指標ガイド</button>
@@ -2563,10 +2563,10 @@
 <!-- ══ タブ②: 検討銘柄 ══ -->
 <div id="tab-watchlist" class="tab-pane">
   <div class="filter-bar" style="position:sticky; top:98px; z-index:97;">
-    <button class="filter-btn active" onclick="filterCards('w_all',     this, 'watchlist')">すべて (5)</button>
+    <button class="filter-btn active" onclick="filterCards('w_all',     this, 'watchlist')">すべて (6)</button>
     <button class="filter-btn" onclick="filterCards('w_super_go', this, 'watchlist')">⭐ super_go (0)</button>
     <button class="filter-btn" onclick="filterCards('w_go',      this, 'watchlist')">🟢 go+ (0)</button>
-    <button class="filter-btn" onclick="filterCards('w_caution', this, 'watchlist')">🟡 caution (1)</button>
+    <button class="filter-btn" onclick="filterCards('w_caution', this, 'watchlist')">🟡 caution (2)</button>
     <button class="filter-btn" onclick="filterCards('w_wait',    this, 'watchlist')">─ wait (4)</button>
     <button class="filter-btn" onclick="filterCards('w_ng',      this, 'watchlist')">✗ ng (0)</button>
     <button class="filter-btn" onclick="filterCards('w_alert',   this, 'watchlist')">⚠ RSI過熱 (0)</button>
@@ -2626,6 +2626,35 @@
               <div class="meta-row" style="background:rgba(88,166,255,0.05); border:1px solid rgba(88,166,255,0.2); border-radius:4px; padding:6px 8px; margin-top:6px;"><span class="meta-label" style="background:rgba(88,166,255,0.18); color:#79c0ff">AI所見</span> <span style="color:#c9d1d9; font-size:0.83em; line-height:1.6">RSI(73)はやや過熱。追いかけ買いには注意。 / MC予測(15日後中央値)は+7.3%と上昇優位。 / RR 3.37は高水準。損切りを守ればリスクに見合う。</span></div>
             </div>
             <div style="padding:8px 16px;background:rgba(31,111,235,0.08);border-top:1px solid #30363d;border-left:3px solid #3fb950;font-size:0.88em"><span style="color:#8b949e">📐 推奨ロット倍率:</span> <b style="color:#3fb950;font-size:1.1em">1.0x (高信頼)</b> <span style="color:#636e7b;margin-left:10px">グループ <code>highV|Other</code> 過去 OOS PF 8.02 (n=0)</span></div>
+            
+          </div>
+        </div>
+        <div id="wl-card-4746" class="card" style="border-left:4px solid #79c0ff; background:rgba(121,192,255,0.10)">
+          <div class="card-row" onclick="toggleCard('4746')"><div class="row-id"><span class="sector-tag">情報・通信</span><div class="code-name-wrap"><span class="code" style="color:#79c0ff">4746</span><span class="name">4746</span></div></div><div class="row-signal"><div class="verdict-row"><span class="verdict-label-wrap"><span class="verdict verdict-caution">🟡 caution</span></span><span class="verdict-icons" style="display:inline-flex; flex-wrap:nowrap; gap:2px; align-items:center; white-space:nowrap"><span class="ball-cell" title="スコア +5.8"><span class="ball-slot"><span style="display:inline-block; width:20px; height:20px; border-radius:50%; background:#79c0ff; box-shadow:0 0 6px #79c0ff99; color:#0d1117; text-align:center; line-height:20px; font-size:11px; font-weight:bold">S</span></span><span class="ball-val">+5.8</span></span><span class="ball-cell" title="リスクリワード 3.59"><span class="ball-slot"><span style="display:inline-block; width:20px; height:20px; border-radius:50%; background:#3fb950; box-shadow:0 0 6px #3fb95099; color:#0d1117; text-align:center; line-height:20px; font-size:11px; font-weight:bold">R</span></span><span class="ball-val">3.6</span></span><span class="ball-cell" title="ML上昇確率 56%"><span class="ball-slot"><span style="display:inline-block; width:26px; height:26px; border-radius:50%; background:#79c0ff; box-shadow:0 0 6px #79c0ff99; color:#0d1117; text-align:center; line-height:26px; font-size:14px; font-weight:bold">M</span></span><span class="ball-val">56%</span></span><span class="ball-cell" title="期待値 +2.20%"><span class="ball-slot"><span style="display:inline-block; width:21px; height:21px; border-radius:50%; background:#f0a000; box-shadow:0 0 6px #f0a00099; color:#0d1117; text-align:center; line-height:21px; font-size:11px; font-weight:bold">E</span></span><span class="ball-val">+2.2%</span></span></span></div></div><div class="row-prices"><div class="pb-stop"><span class="pb-stop-val">損切 ¥4,112</span><span class="pb-stop-pct">-1.4%&nbsp;(¥58)</span></div><div class="pb-track"><div class="pb-loss-fill" style="width:21.8%"></div><div class="pb-gain-fill" style="left:21.8%"></div><div class="pb-dot" style="left:21.8%"><div class="pb-now-label">¥4,170 <span style="font-size:0.72em; color:#ff9900; font-weight:bold; white-space:nowrap">進捗 22%</span></div></div></div><div class="pb-tgt"><span class="pb-tgt-val">¥4,378</span><span class="pb-tgt-pct">+5.0%&nbsp;(¥208)</span></div><div style="font-size:0.78em; color:#3fb950; margin-top:2px; padding-left:8px; line-height:1.3">💡 ✨ RSI25 売られすぎ → 反発候補, 出来高&サポート要確認</div></div><div class="row-mid"></div><div class="row-right"><span class="rs-rsi" style="color:#3fb950"><span class="rsi-emoji">❄</span>&nbsp;RSI 24.8</span></div><span class="expand-arrow">▶</span></div>
+          <div class="card-detail">
+            <div class="card-close-bar">
+              <span style="color:#8b949e;font-size:0.85em">
+                <b style="color:#79c0ff">4746</b> 4746
+                &nbsp;―&nbsp;現値 <b>4,170円</b> / 上昇確率 <b style="color:#ff9900">56%</b>
+                / 更新日 <b>2026-05-13</b>
+              </span>
+              <button class="close-btn" onclick="toggleCard('4746',event)">✕ 閉じる</button>
+            </div>
+            
+            
+            <div class="chart-section"><div class="chart-clip-wrapper"><img id="chart-img-4746" src="charts/4746_pattern_latest.jpg" alt="4746 chart" onload="initChartClip(this)"></div><button class="chart-toggle-btn" onclick="toggleChartClip(this)">▼ 詳細インジケーターを表示</button><button id="chart-ptbtn-4746" class="pattern-toggle-btn pattern-active" onclick="togglePatternChart('chart-img-4746','chart-ptbtn-4746','charts/4746_latest.png','charts/4746_pattern_latest.jpg')">📊 通常チャート表示</button></div>
+            <div class="detail-meta">
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="meta-row" style="background:rgba(88,166,255,0.05); border:1px solid rgba(88,166,255,0.2); border-radius:4px; padding:6px 8px; margin-top:6px;"><span class="meta-label" style="background:rgba(88,166,255,0.18); color:#79c0ff">AI所見</span> <span style="color:#c9d1d9; font-size:0.83em; line-height:1.6">RSI(25)がこの銘柄の底値圏(35以下)に到達。反発の可能性。 / RR 3.59は高水準。損切りを守ればリスクに見合う。</span></div>
+            </div>
+            <div style="padding:8px 16px;background:rgba(31,111,235,0.08);border-top:1px solid #30363d;border-left:3px solid #3fb950;font-size:0.88em"><span style="color:#8b949e">📐 推奨ロット倍率:</span> <b style="color:#3fb950;font-size:1.1em">1.0x (高信頼)</b> <span style="color:#636e7b;margin-left:10px">グループ <code>midV|Tech</code> 過去 OOS PF 16.51 (n=0)</span></div>
             
           </div>
         </div>
@@ -101254,7 +101283,7 @@ function apToggle(sk) {
 
   // ── フィルタリング（保有・検討共通） ──
   const holdingsData = [{"code": "2153", "uid": "2153_\u901a\u5e38", "score": 5.3, "rsi": 25.786163522012572, "pnl_pct": -1.1242603550295858, "verdict": "caution"}, {"code": "2153", "uid": "2153_NISA", "score": 5.3, "rsi": 25.786163522012572, "pnl_pct": -5.959817659969615, "verdict": "caution"}, {"code": "9432", "uid": "9432_NISA", "score": -8.5, "rsi": 41.12145001319101, "pnl_pct": -4.1480555531319725, "verdict": "caution"}, {"code": "7164", "uid": "7164_\u901a\u5e38", "score": 10.7, "rsi": 26.51072124756334, "pnl_pct": 10.051357300073366, "verdict": "caution"}, {"code": "9433", "uid": "9433_NISA", "score": -2.4, "rsi": 38.92806770098731, "pnl_pct": -1.172562048075044, "verdict": "caution"}, {"code": "4248", "uid": "4248_NISA", "score": -6.6, "rsi": 46.34146341463415, "pnl_pct": -1.1235955056179776, "verdict": "caution"}, {"code": "5845", "uid": "5845_NISA", "score": -1.9, "rsi": 27.11864406779661, "pnl_pct": 2.6455026455026456, "verdict": "caution"}, {"code": "3350", "uid": "3350_NISA", "score": -1.2999999999999998, "rsi": 55.4140127388535, "pnl_pct": -29.22247597884904, "verdict": "caution"}, {"code": "8306", "uid": "8306_\u901a\u5e38", "score": 16.5, "rsi": 42.72013949433305, "pnl_pct": 15.118616807398471, "verdict": "wait"}, {"code": "8306", "uid": "8306_NISA", "score": 16.5, "rsi": 42.72013949433305, "pnl_pct": 0.6857745735888869, "verdict": "wait"}, {"code": "9434", "uid": "9434_\u901a\u5e38", "score": 4.9, "rsi": 39.48496027148853, "pnl_pct": 5.687892025515016, "verdict": "wait"}, {"code": "9347", "uid": "9347_\u901a\u5e38", "score": 7.7, "rsi": 13.772455089820369, "pnl_pct": 38.858560794044664, "verdict": "wait"}, {"code": "9831", "uid": "9831_\u901a\u5e38", "score": 3.0, "rsi": 65.90295897316096, "pnl_pct": 27.37556561085973, "verdict": "wait"}, {"code": "2163", "uid": "2163_NISA", "score": 5.7, "rsi": 28.33333333333333, "pnl_pct": -0.5738132498695879, "verdict": "wait"}, {"code": "4275", "uid": "4275_\u901a\u5e38", "score": 4.6, "rsi": 62.80137772675086, "pnl_pct": 304.94224178056106, "verdict": "wait"}, {"code": "5817", "uid": "5817_\u901a\u5e38", "score": 3.1, "rsi": 33.91521197007481, "pnl_pct": 7.541651180453429, "verdict": "wait"}, {"code": "4075", "uid": "4075_\u901a\u5e38", "score": 6.8, "rsi": 30.585106382978722, "pnl_pct": 40.91456077015644, "verdict": "wait"}, {"code": "4425", "uid": "4425_\u901a\u5e38", "score": 6.7, "rsi": 63.69386464263125, "pnl_pct": 136.37083993660858, "verdict": "wait"}, {"code": "4356", "uid": "4356_NISA", "score": 4.2, "rsi": 67.02127659574468, "pnl_pct": -1.8743109151047408, "verdict": "wait"}, {"code": "8316", "uid": "8316_\u901a\u5e38", "score": 12.4, "rsi": 51.3302034428795, "pnl_pct": 344.06516679596587, "verdict": "wait"}, {"code": "4762", "uid": "4762_\u901a\u5e38", "score": 5.8, "rsi": 65.3658536585366, "pnl_pct": 2.941176470588235, "verdict": "wait"}, {"code": "5074", "uid": "5074_\u901a\u5e38", "score": -2.8, "rsi": 88.8045540796964, "pnl_pct": 76.98367084756076, "verdict": "ng"}, {"code": "3183", "uid": "3183_NISA", "score": -10.4, "rsi": 31.858407079646028, "pnl_pct": -11.644318983768526, "verdict": "ng"}, {"code": "9233", "uid": "9233_NISA", "score": -2.7, "rsi": 35.18518518518519, "pnl_pct": -9.75232198142415, "verdict": "ng"}, {"code": "3003", "uid": "3003_\u901a\u5e38", "score": 1.0, "rsi": 38.2953181272509, "pnl_pct": 72.74215004163037, "verdict": "ng"}, {"code": "3798", "uid": "3798_\u901a\u5e38", "score": -4.0, "rsi": 27.857142857142847, "pnl_pct": -2.63147665876316, "verdict": "ng"}, {"code": "3744", "uid": "3744_\u901a\u5e38", "score": -10.5, "rsi": 70.14925373134328, "pnl_pct": 4.298642533936651, "verdict": "ng"}, {"code": "4755", "uid": "4755_\u901a\u5e38", "score": -0.8, "rsi": 21.793910053388828, "pnl_pct": -3.6491677336747763, "verdict": "ng"}, {"code": "1407", "uid": "1407_\u901a\u5e38", "score": 1.3, "rsi": 77.07808564231738, "pnl_pct": 72.91452831949239, "verdict": "ng"}, {"code": "5133", "uid": "5133_\u901a\u5e38", "score": -2.3, "rsi": 73.84615384615384, "pnl_pct": 7.546048722519304, "verdict": "ng"}, {"code": "4977", "uid": "4977_\u901a\u5e38", "score": -1.9, "rsi": 43.47826086956522, "pnl_pct": 44.578313253012055, "verdict": "ng"}, {"code": "5026", "uid": "5026_\u901a\u5e38", "score": -2.4, "rsi": 62.08530805687204, "pnl_pct": 8.429752066115702, "verdict": "ng"}];
-  const watchlistData = [{"code": "350A", "score": -2.0, "rsi": 73.02158273381295, "verdict": "caution"}, {"code": "2413", "score": 5.4, "rsi": 14.93598862019914, "verdict": "wait"}, {"code": "4259", "score": 10.2, "rsi": 48.375451263537904, "verdict": "wait"}, {"code": "3673", "score": 8.1, "rsi": 37.07317073170732, "verdict": "wait"}, {"code": "4979", "score": 10.5, "rsi": 54.299754299754305, "verdict": "wait"}];
+  const watchlistData = [{"code": "350A", "score": -2.0, "rsi": 73.02158273381295, "verdict": "caution"}, {"code": "4746", "score": 5.8, "rsi": 24.786324786324784, "verdict": "caution"}, {"code": "2413", "score": 5.4, "rsi": 14.93598862019914, "verdict": "wait"}, {"code": "4259", "score": 10.2, "rsi": 48.375451263537904, "verdict": "wait"}, {"code": "3673", "score": 8.1, "rsi": 37.07317073170732, "verdict": "wait"}, {"code": "4979", "score": 10.5, "rsi": 54.299754299754305, "verdict": "wait"}];
 
   function filterCards(type, btn, tab) {
     btn.closest('.filter-bar').querySelectorAll('.filter-btn')
